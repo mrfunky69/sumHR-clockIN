@@ -8,7 +8,7 @@ def hit_api():
         headers = {
             'Accept': 'application/json, text/plain, */*',
             'Accept-Language': 'en-US,en;q=0.9',
-            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjU5NDA2LCJhY2NvdW50aWQiOjI4MSwic3Vic2NyaXB0aW9uaWQiOjI5MCwiZW1wbG95ZWVpZCI6OTE5MTksInRpbWV6b25laWQiOjI1MSwicm9sZWlkIjo4NDMsIm1hc3RlcnByb2ZpbGVpZCI6NywibG9naW5pbmZvaWQiOjMxMjYwNTQsImVtYWlsaWQiOiJyb2hpdC5rdW1hcjJAbWNraW5sZXlyaWNlLmNvIiwiZXhwIjoxNzA2NTAyNTg3LCJpYXQiOjE3MDU4OTc3ODd9.YEzYLMZ3G-xTbfJUcraqVaNU1zTCUnPpwNzvrhdFozY',
+            'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjU5NDA2LCJhY2NvdW50aWQiOjI4MSwic3Vic2NyaXB0aW9uaWQiOjI5MCwiZW1wbG95ZWVpZCI6OTE5MTksInRpbWV6b25laWQiOjI1MSwicm9sZWlkIjo4NDMsIm1hc3RlcnByb2ZpbGVpZCI6NywibG9naW5pbmZvaWQiOjMyMDcxMjQsImVtYWlsaWQiOiJyb2hpdC5rdW1hcjJAbWNraW5sZXlyaWNlLmNvIiwiZXhwIjoxNzA3NzMwMTYwLCJpYXQiOjE3MDcxMjUzNjB9.SZnwjKwWf8SGRsdH3YlLZXKsq3SzReR_h6TCL-8YKo8',
             'Connection': 'keep-alive',
             'Origin': 'https://mckinley.sumhr.io',
             'Referer': 'https://mckinley.sumhr.io/',
@@ -44,3 +44,18 @@ def schedule_api_hits():
 # Run the scheduled tasks
 schedule_api_hits()
 
+# curl 'https://api.sumhr.io:3000/api/attendance/initwebpunch/103.200.100.55' \
+#   -H 'Accept: application/json, text/plain, */*' \
+#   -H 'Accept-Language: en-US,en;q=0.9' \
+#   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyaWQiOjU5NDA2LCJhY2NvdW50aWQiOjI4MSwic3Vic2NyaXB0aW9uaWQiOjI5MCwiZW1wbG95ZWVpZCI6OTE5MTksInRpbWV6b25laWQiOjI1MSwicm9sZWlkIjo4NDMsIm1hc3RlcnByb2ZpbGVpZCI6NywibG9naW5pbmZvaWQiOjMyMDcxMjQsImVtYWlsaWQiOiJyb2hpdC5rdW1hcjJAbWNraW5sZXlyaWNlLmNvIiwiZXhwIjoxNzA3NzMwMTYwLCJpYXQiOjE3MDcxMjUzNjB9.SZnwjKwWf8SGRsdH3YlLZXKsq3SzReR_h6TCL-8YKo8' \
+#   -H 'Connection: keep-alive' \
+#   -H 'Origin: https://mckinley.sumhr.io' \
+#   -H 'Referer: https://mckinley.sumhr.io/' \
+#   -H 'Sec-Fetch-Dest: empty' \
+#   -H 'Sec-Fetch-Mode: cors' \
+#   -H 'Sec-Fetch-Site: same-site' \
+#   -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36' \
+#   -H 'sec-ch-ua: "Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"' \
+#   -H 'sec-ch-ua-mobile: ?0' \
+#   -H 'sec-ch-ua-platform: "Linux"' \
+#   --compressed
